@@ -209,8 +209,41 @@ jonas['twitter'] = '@jonasschmedtman';
 console.log(jonas);
 
 console.log(`${jonas["firstName"]} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
-*/
 
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    birthYear: 1991,
+    job: 'Teacher',
+friends: ['Michael','Peter','Steven'],
+hasDriversLicense: true,
+
+//calcAge: function(birthYear){
+  //  return 2037- birthYear;
+//},
+
+//calcAge: function (){
+  //  return 2037 - this.birthYear;
+//}
+
+calcAge: function (){
+    this.age =2037 - this.birthYear;
+    return this.age;
+},
+getSummary: function(){
+    this.summary = `${this.firstName} is a ${this.age}-year old ${this.job}, and he ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`;
+    return this.summary;
+}
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+console.log(jonas.getSummary());
+console.log(jonas.summary)*/
 
 
 
