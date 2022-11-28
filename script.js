@@ -343,7 +343,37 @@ for(let excercise = 1; excercise < 4; excercise++){
     for (let rep = 1; rep < 6; rep++){
         console.log(`lifting weight repetition ${rep}`);
     }
-}*/
+}
+
+for (let rep = 1; rep < 11; rep++){
+    console.log(`lifting weight repetition ${rep}`);
+};
+let rep =1;
+while (rep<= 10){
+    console.log(`WHILE Lifting weights repetition ${rep}`);
+    rep++;
+};
+*/
+let dice = Math.trunc(Math.random()*6)+1;
+console.log(dice);
+
+while (dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random()*6)+1;
+if (dice === 6){
+    console.log('loop is about to end...');
+}
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
