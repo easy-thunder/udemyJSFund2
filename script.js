@@ -353,7 +353,7 @@ while (rep<= 10){
     console.log(`WHILE Lifting weights repetition ${rep}`);
     rep++;
 };
-*/
+
 let dice = Math.trunc(Math.random()*6)+1;
 console.log(dice);
 
@@ -367,16 +367,65 @@ if (dice === 6){
 }
 
 
+const bills = [
+    22, 295, 176, 440, 37, 105, 10, 1100, 86, 52,
+]
+const tips = [];
+const totals = [];
+
+function calcTip(){
+    for(let i=0;i<bills.length; i++){
+       if(bills[i]<50 || bills[i] > 300){
+         this.tip = bills[i]*.2
+        }
+      else{this.tip = bills[i]*.15};
+        
+
+      tips.push(this.tip);
+      totals.push(this.tip+bills[i]);
+    }
+}
+calcTip()
+console.log(tips);
+console.log(totals);
+const newArray=[
+    534, 435, 2465, 345, 123, 456, 
+]
 
 
+//my way of figuring out the average of any array
+const calcAverage = function(arr){
+    
+    let sum = 0;
+    let average;
+    for(let x=0; x < arr.length; x++){
+        
+        sum += arr[x];
+    
+        
+       if(x==arr.length-1){ 
+        console.log(sum);
+        average = sum/arr.length};
+       console.log(average);
+        
 
+    }
+}
+calcAverage(newArray)
 
+// code along of finding the average of any array
 
+const calcAverage = function(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+       // sum = sum + arr[i];
+       sum += arr[i];
+    }
 
-
-
-
-
+    return sum / arr.length;
+}
+console.log(calcAverage([2,3,7]));
+*/
 
 
 
