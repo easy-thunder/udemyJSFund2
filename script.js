@@ -322,12 +322,28 @@ for(let i = 0; i < jonasArray.length; i++){
 for(let i = 0; i < jonasArray.length; i++){
     if(typeof jonasArray[i] !== 'string') break;
     console.log(jonasArray[i], typeof jonasArray[i]);
-};*/
+};
 
+const jonas = [
+    'jonas',
+    'Shmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+// 0,1,2,3,4
+//4,3,2,1,0
+for (let i = jonas.length-1; i>=0; i--){
+    console.log(jonas[i]);
+}
 
-
-
-
+for(let excercise = 1; excercise < 4; excercise++){
+    console.log(`Starting excercise ${excercise}`);
+    for (let rep = 1; rep < 6; rep++){
+        console.log(`lifting weight repetition ${rep}`);
+    }
+}*/
 
 
 
